@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firefox Helper - Instructions</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container instructions-container">
+    <h1 class="title">Firefox Helper Instructions</h1>
+    <div class="instructions-content">
+      <h2>How to Use Firefox Helper</h2>
+      <ol>
+        <li><strong>Download the Tool:</strong> Download the firefox-helper.exe file from the previous page.</li>
+        <li><strong>Run the Executable:</strong> Run the firefox-helper.exe file that you downloaded. If it says that windows protected your computer, click More Info, and Run Anyways. This is because Microsoft is greedy and requires 300-600 dollars per year to get rid of that popup. Feel free to compile it yourself using msvc if you feel most comfortable that way.</li>
+        <li><strong>Click on "Launch Firefox":</strong> This will run Firefox. This should only take a couple seconds. When it asks for administrator (the UAC prompt), click escape on your keyboard, or press no on the screen. Firefox does not need administrator permissions, however the permission requests are deeply rooted within its installer, and are not easy to change.</li>
+        <li><strong>Relaunch Firefox after closing it:</strong> If you closed out firefox, click the relaunch button again. Running it through the start menu will <strong>NOT</strong> work, so do not complain about that.</li>
+      </ol>
+      <p>If you encounter any issues besides the already known ones, please let me know.</p>
+
+      <h2>Known Bugs/Problems</h2>
+      <ul>
+        <li><strong>UAC Prompt (Won't Fix)</strong> Unless Firefox magically makes it easier to deroot itself via 7z, it is not removable. Microsoft made the UAC extremely secure (as it should be), hence, it is not possible to interfere with.</li>
+        <li><strong>Firefox Doesn't Open Via Start Menu (Won't Fix)</strong> This is not something that can be circumvented. This is a restriction placed by administrators. If you could open it through the start menu, this tool would not exist.</li>
+        <li><strong>Lack of Customization (Might fix)</strong> Currently, there is no customization. In the future, I may add options to remove the installation pop-up, customize the used Firefox .exe file, etc. If you have any suggestions, let me know.</li>
+      </ul>
+
+      <h2>(Not So) FAQ</h2>
+      <ul>
+        <li><strong>Why Does It Say Re-installing?</strong> This is because of how the method works. Discovered by Kinnick, if you rerun the Firefox installer, it opens again, even with all of your data from the last session.</li>
+        <li><strong>How Do I Un-install Firefox and Firefox Helper?</strong> To delete Firefox and Firefox Helper, delete the firefox-helper.exe file, delete %localappdata%\firefox-helper, search up Firefox in the start menu, right click it, click uninstall, scroll down until you find Firefox, right click it, click uninstall, click no or escape, and just spam next.</li>
+        <li><strong>How Do I Know This Is Safe To Run?</strong> The source code will probably be posted soon, so you can look at it. The source of the Firefox executable is, well, Mozilla themselves. The app just downloads the Firefox executable into %localappdata%\firefox-helper every time you launch firefox.</li>
+      </ul>
+
+      <a href="../index.html" class="button">Back to Homepage</a>
+    </div>
+  </div>
+</body>
+</html>
